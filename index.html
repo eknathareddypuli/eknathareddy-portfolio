@@ -206,7 +206,7 @@ body[data-view=recruiter] .eng{display:none}body:not([data-view=recruiter]) .rec
   <p class="sub rv">Hover a number for context. Tap on touch devices.</p>
   <div class="grid g4">
     <div class="card tip rv" tabindex="0"><div class="num"><span data-count="14">0</span>+</div><div class="lab">years in production</div><div class="pop">Linux admin → virtualization → cloud → platform &amp; SRE, 2010 onward.</div></div>
-    <div class="card tip rv" tabindex="0"><div class="num"><span data-count="99.9" data-dec="1">0</span>%+</div><div class="lab">SLA · multi-AZ OpenStack</div><div class="pop"><span class="ph">[edit]</span> Achieved, measured over <span class="ph">[N months]</span>, across <span class="ph">[N AZs]</span> at IBM.</div></div>
+    <div class="card tip rv" tabindex="0"><div class="num"><span data-count="99.9" data-dec="1">0</span>%+</div><div class="lab">SLA · multi-AZ OpenStack</div><div class="pop">Sustained across compute, networking, storage and identity services of a multi-AZ OpenStack private cloud at IBM.</div></div>
     <div class="card tip rv" tabindex="0"><div class="num"><span data-count="7">0</span></div><div class="lab">teams since 2010</div><div class="pop">Ericsson · Subex · AT&amp;T / Xandr / Microsoft · Sterlite · IBM, plus two early roles.</div></div>
     <div class="card tip rv" tabindex="0"><div class="num"><span data-count="4">0</span></div><div class="lab">clouds: AWS · Azure · GCP · hybrid</div><div class="pop">Day-to-day focus is AWS + Azure with on-prem OpenStack.</div></div>
   </div>
@@ -299,11 +299,37 @@ body[data-view=recruiter] .eng{display:none}body:not([data-view=recruiter]) .rec
 const EMAIL_USER="your.name", EMAIL_HOST="example.com";           // assembled at runtime to dodge scrapers
 const ROLES=["Platform Engineering","Site Reliability","Kubernetes at scale","Hybrid Cloud · OpenStack"];
 const JOBS=[
- {co:"IBM",t:"Senior Staff Software Engineer — Platform · Cloud Infra · SRE",y:"2023 — now",now:1,s:"Multi-AZ OpenStack and hybrid cloud platform reliability.",b:["Held <span class='ph'>99.9%+</span> SLA across multi-AZ OpenStack.","Automated <span class='ph'>[N]</span> recurring L3 fixes in Python / Terraform — toil cut by <span class='ph'>[X%]</span>.","Own runbooks, SLOs and the escalation path for the platform."]},
- {co:"Sterlite Technologies",t:"Cloud / infrastructure engineer",y:"2022 — 2023",s:"<span class='ph'>[edit: one line on scope]</span>",b:["<span class='ph'>[Edit: biggest outcome, with a number]</span>"]},
- {co:"AT&T → Xandr → Microsoft",t:"Platform / operations engineer",y:"2019 — 2022",s:"One continuous role through two spin-outs and an acquisition.",chain:["AT&T","Xandr","Microsoft"],b:["Operated large-scale ad-tech infrastructure through two ownership changes without a re-platform outage.","<span class='ph'>[Edit: fleet size, request volume or latency win]</span>"]},
- {co:"Subex",t:"Infrastructure / production support",y:"2017 — 2019",s:"<span class='ph'>[edit: one line on scope]</span>",b:["<span class='ph'>[Edit: outcome]</span>"]},
- {co:"Ericsson",t:"Infrastructure · virtualization · Linux",y:"2011 — 2017",s:"Enterprise infrastructure, virtualization and production support.",b:["Six years building the Linux and virtualization fundamentals everything else sits on.","<span class='ph'>[Edit: outcome]</span>"]},
+ {co:"IBM",t:"Senior Staff Software Engineer, Platform Engineering &amp; SRE",y:"Aug 2023 — now",now:1,s:"IBM Systems Development Labs, Bengaluru",b:[
+  "Lead platform engineering for a multi-AZ OpenStack private cloud serving enterprise production workloads, sustaining a <b>99.9%+ SLA</b> across compute, networking, storage and identity services.",
+  "Own the full lifecycle of production Kubernetes clusters (deployment, zero-downtime upgrades, scaling, troubleshooting); build Go operators and CLI utilities that automate platform orchestration.",
+  "Drive architecture and change reviews with network, storage and security teams, defining upgrade strategy, failover design and rollback plans for the OpenStack and Kubernetes platform.",
+  "Lead P1/P2 incident response and root-cause analysis across Linux, Kubernetes, OpenStack, storage and virtualization layers; eliminate recurring outages with automated remediation runbooks.",
+  "Built Terraform, Python and shell infrastructure-as-code pipelines that cut environment provisioning time by <b>~60%</b> and made builds repeatable.",
+  "Enforce security hardening standards across compute, network and storage layers; run automated compliance scanning that reduces vulnerability exposure and surfaces drift early.",
+  "Operate PostgreSQL and MySQL behind platform services with validated backups, replication monitoring and performance tuning.",
+  "Mentor engineers through hands-on guidance, deep-dive troubleshooting sessions and operational best practices."]},
+ {co:"Sterlite Technologies",t:"Senior Tech Lead, Kubernetes &amp; Cloud Infrastructure",y:"Jul 2022 — Aug 2023",s:"Bengaluru",b:[
+  "Ran production-grade Kubernetes clusters for carrier-grade telecom workloads across development, staging and production.",
+  "Deployed and administered container platforms covering CNI networking, CSI persistent storage, RBAC policies and workload scheduling for high-throughput applications.",
+  "Automated provisioning with Terraform on OpenStack and public cloud, cutting manual configuration errors and environment spin-up time.",
+  "Implemented Prometheus and Grafana observability with proactive alerting, reducing mean time to detection (MTTD) for production anomalies.",
+  "Mentored engineers on Kubernetes operations, container security and cloud-native practices."]},
+ {co:"AT&amp;T / Xandr (acquired by Microsoft, 2022)",t:"Technical Specialist, Cloud Infrastructure &amp; Kubernetes",y:"Dec 2019 — Jul 2022",s:"Bengaluru. One continuous role through a spin-out and an acquisition.",chain:["AT&amp;T","Xandr","Microsoft"],b:[
+  "Led Kubernetes cluster upgrades and migrations across on-premises and cloud with <b>zero downtime</b> for production ad-tech services.",
+  "Scaled and managed highly available Linux, Kubernetes and Azure infrastructure for mission-critical microservices with strict latency and throughput requirements.",
+  "Administered PostgreSQL and MySQL: replication topologies, query optimization and automated backups, sustaining <b>99.95% uptime</b>.",
+  "Reduced infrastructure cost through right-sizing and reserved-instance planning while meeting performance SLAs."]},
+ {co:"Subex",t:"Lead, Cloud &amp; IT Infrastructure",y:"Jun 2017 — Dec 2019",s:"Bengaluru",b:[
+  "Managed and optimized OpenStack, AWS and Azure environments for enterprise infrastructure workloads.",
+  "Architected and executed large-scale multi-cloud migrations with minimal downtime and zero data loss.",
+  "Designed highly available hybrid cloud infrastructure with disaster recovery, achieving <b>RPO under 15 minutes</b> and <b>RTO under 1 hour</b> for critical services.",
+  "Hardened cloud security through network segmentation, IAM policies and encryption standards across multi-cloud deployments."]},
+ {co:"Ericsson",t:"Senior Engineer, OSS-RC Production Infrastructure",y:"Sep 2011 — May 2017",s:"Bengaluru. Telecom production infrastructure on Solaris and RHEL.",b:[
+  "Administered, optimized and scaled OSS-RC production telecom infrastructure and databases on Solaris and RHEL, maintaining <b>99.95% uptime</b>.",
+  "Led deployment, patching and complex upgrades of multi-tier applications in HA architectures with zero user-facing disruption.",
+  "Automated repetitive deployment and environment configuration with shell scripting, reducing operational toil.",
+  "Handled P1 incident response and emergency patching as part of a 24x7 Emergency Recovery Team under strict SLAs.",
+  "Resolved OS-level performance bottlenecks by tuning kernel parameters and resource allocation for heavy database and application workloads."]},
  {co:"RCS Technologies · Genisys Information Systems",t:"System Administrator Trainee · Junior Business Analyst",y:"2010",s:"Where it started."}
 ];
 const TOOLS={
