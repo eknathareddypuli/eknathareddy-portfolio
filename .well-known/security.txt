@@ -1,0 +1,6 @@
+# Security contact for eknathareddy.com (static site, no user data collected)
+Contact: mailto:your.name@example.com
+Expires: 2027-11-13T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://eknathareddy.com/.well-known/security.txt
+Policy: https://eknathareddy.com/#privacy
